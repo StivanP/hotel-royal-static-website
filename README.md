@@ -42,6 +42,12 @@ text
 ├─ contact.html
 ├─ header.html
 ├─ footer.html
+├─ barAndRestaurant.html
+├─ casino.html
+├─ comingsoon.html
+├─ faq.html
+├─ offers.html
+├─ spazone.html
 ├─ css/
 │  ├─ header.css
 │  ├─ footer.css
