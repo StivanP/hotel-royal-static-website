@@ -33,7 +33,8 @@ The project focuses on clean structure, responsive layout, reusable components, 
 ---
 
 ## Project Structure
-```text
+```
+text
 /
 ├─ index.html
 ├─ rooms.html
@@ -53,7 +54,8 @@ The project focuses on clean structure, responsive layout, reusable components, 
 ├─ images/
 ├─ videos/
 ├─ screenshots/
-└─ README.md ```
+└─ README.md
+```
 
 ## Screenshots
 
