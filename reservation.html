@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div> 
+
+    <main>
+        <section class="reservation-section">
+            <h1>Направете резервация</h1>
+            <form id="reservation-form" novalidate>
+                <div class="form-container">
+                    <div class="form-panel">
+                        <h2>Данни за контакт</h2>
+                        <label for="first-name">Собствено име:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <span id="first-name-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+            
+                        <label for="middle-name">Презиме:</label>
+                        <input type="text" id="middle-name" name="middle-name" required>
+                        <span id="middle-name-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+
+                        <label for="last-name">Фамилия:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <span id="last-name-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error"></div>
+
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span id="phone-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+                    </div>
+            
+                    <div class="form-panel">
+                        <h2>Данни за резервацията</h2>
+                        <label for="arrival-date">Дата на пристигане:</label>
+                        <input type="date" id="arrival-date" name="arrival-date" required>
+                        <span id="arrival-date-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+
+                        <label for="arrival-time">Час на пристигане:</label>
+                        <input type="time" id="arrival-time" name="arrival-time" required>
+                        <span id="arrival-time-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+
+                        <label for="nights">Брой нощувки:</label>
+                        <input type="number" id="nights" name="nights" min="1" required>
+                        <span id="nights-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+            
+                        <label for="room-type">Вид резервация:</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="">-- Изберете --</option>
+                            <option value="deluxe">Делукс стая</option>
+                            <option value="apartment">Апартамент</option>
+                            <option value="presidential">Президентски апартамент</option>
+                        </select>
+                        <span id="room-type-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+            
+                        <label for="adults">Възрастни:</label>
+                        <input type="number" id="adults" name="adults" min="1" required>
+                        <span id="adults-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+
+                        <label for="children">Деца:</label>
+                        <input type="number" id="children" name="children" min="0">
+                        <span id="children-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+                    </div>
+                </div>
+            
+                <div class="terms">
+                    <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                    <label for="agree-terms">Съгласен съм с политиката на хотела и гарантирането</label>
+                    <span id="agree-terms-error" class="error-message" style="display:none; color:red; font-size:0.9em;"></span>
+                </div>
+            
+            <button type="submit" class="reserve-now" id="submit-reservation">Направи резервация</button>
+            </form>
+
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div> 
+    <script src="js/script.js" defer></script>
+</body>
+</html>

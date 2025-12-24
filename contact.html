@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Royal & Casino - Contacts</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div> 
+    
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h1>Контакти</h1>
+                <p class="contact-item">Royal Hotel & Casino</p>
+                <p class="contact-item">Телефон: +359 123 456 789</p>
+                <p class="contact-item">Имейл: info@royalhotelcasino.com</p>
+                <p class="contact-item">Адрес: 45RP+F52 - Umm Suqeim 3 - Dubai - Обединени арабски емирства</p>
+                <p class="contact-item">Работно време: 24/7</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Свържете се с нас</h2>
+                <form id="contact-form" novalidate>
+                    <label for="name">Име</label>
+                    <input type="text" id="name" name="name" placeholder="Вашето име" required>
+                    <div class="error-message" id="name-error"></div>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Вашият имейл" required>
+                    <div class="error-message" id="email-error"></div>
+                    
+                    <label for="message">Съобщение</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Вашето съобщение" required></textarea>
+                    <div class="error-message" id="message-error"></div>
+                    
+                    <div class="checkbox-section">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Съгласявам се с политиката за поверителност</label>
+                    </div>
+                    <div class="error-message" id="privacy-error"></div>
+                    
+                    <button type="submit">Изпрати</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast" class="toast-message"></div>
+    <div id="footer-placeholder"></div> 
+    <script src="js/script.js"></script>
+</body>
+</html>

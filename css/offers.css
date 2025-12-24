@@ -1,0 +1,202 @@
+
+.offers-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offers-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+.offers-description {
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin: 20px auto 40px;
+    max-width: 900px;
+    color: #555;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offers-description:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.offer {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.offer h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+
+.offer img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer img:hover {
+    transform: scale(1.05);
+}
+
+
+.offer p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+    padding-bottom: 5px;
+}
+
+
+.offer p:hover {
+    color: #8f00ff;
+    transform: translateY(-5px);
+    padding-bottom: 10px;
+}
+
+
+.offer p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #8f00ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+
+.offer p:hover::after {
+    transform: scaleX(1);
+}
+
+
+.offer p {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.offer p:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.offer:hover {
+    border-color: #8f00ff;
+    box-shadow: 0 0 10px #8f00ff;
+}
+
+
+.offer {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@media (max-width: 480px) {
+    .offers-section {
+        padding: 10px;
+    }
+
+    .offers-section h1 {
+        font-size: 1.8em;
+    }
+
+    .offer {
+        padding: 15px;
+    }
+
+    .offer h2 {
+        font-size: 1.6em;
+    }
+
+    .offer p {
+        font-size: 1em;
+    }
+
+    .offer img {
+        max-width: 100%;
+    }
+
+    .offer {
+        display: block;
+        text-align: center;
+    }
+
+    .offer img {
+        margin-bottom: 10px;
+    }
+
+    .offer p {
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 991px) {
+    .offers-section h1 {
+        font-size: 2.2em;
+    }
+
+    .offer {
+        padding: 18px;
+    }
+
+    .offer h2 {
+        font-size: 1.8em;
+    }
+
+    .offer p {
+        font-size: 1.1em;
+    }
+
+    .offer img {
+        max-width: 100%;
+    }
+
+    .offer {
+        display: block;
+        text-align: center;
+    }
+
+    .offer img {
+        margin-bottom: 10px;
+    }
+
+    .offer p {
+        margin-top: 10px;
+    }
+}

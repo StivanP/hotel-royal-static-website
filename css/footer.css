@@ -1,0 +1,288 @@
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.subscription-section {
+    background-color: red;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.subscription-label {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.subscription-input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #444;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-column a {
+    display: block;
+    color: #d3d3d3;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: none;
+}
+
+.footer-bottom hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0;
+}
+
+.footer-bottom span {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.custom-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8f00ff; 
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 9999;
+    opacity: 0;
+    animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .subscription-section {
+        padding: 10px 5px;
+    }
+
+    .subscription-content {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscription-label {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .subscription-input {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-column h3 {
+        font-size: 18px;
+    }
+
+    .footer-column a {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 991px) {
+    .subscription-section {
+        padding: 15px 10px;
+    }
+
+    .subscription-content {
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+    }
+
+    .subscription-label {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .subscription-input {
+        width: 80%;
+        margin-bottom: 12px;
+    }
+
+    .subscribe-btn {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .footer-column {
+        width: 45%;
+        text-align: left;
+    }
+
+    .footer-column h3 {
+        font-size: 20px;
+    }
+
+    .footer-column a {
+        font-size: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+}
